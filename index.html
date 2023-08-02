@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div id="calculator">
+      <div id="displai">
+        <div id="result">
+          <img src="./assets/equals.svg" alt="sinal de igual" />
+          <div class="display" id="display">display</div>
+        </div>
+      </div>
+      <div id="keyboard">
+        <button class="secondary" onclick="calculadora.clear()">CE</button>
+        <button onclick="calculadora.delete()">C</button>
+        <button onclick="calculadora.porcento()">%</button>
+        <button onclick="calculadora.divisao()" class="tertiary">
+          <img src="./assets/divide.svg" alt="/" />
+        </button>
+        <button onclick="calculadora.atualizar_display(7)">7</button>
+        <button onclick="calculadora.atualizar_display(8)">8</button>
+        <button onclick="calculadora.atualizar_display(9)">9</button>
+        <button onclick="calculadora.multiplicacao()" class="tertiary">
+          <img src="./assets/vezes.svg" alt="x" />
+        </button>
+        <button onclick="calculadora.atualizar_display(4)">4</button>
+        <button onclick="calculadora.atualizar_display(5)">5</button>
+        <button onclick="calculadora.atualizar_display(5)">6</button>
+        <button onclick="calculadora.subtracao()" class="tertiary">
+          <img src="./assets/menos.svg" alt="-" />
+        </button>
+        <button onclick="calculadora.atualizar_display(1)">1</button>
+        <button onclick="calculadora.atualizar_display(2)">2</button>
+        <button onclick="calculadora.atualizar_display(3)">3</button>
+        <button onclick="calculadora.adicao()" class="tertiary">
+          <img src="./assets/soma.svg" alt="+" />
+        </button>
+        <button><img src="./assets/mais-ou-menos.svg" alt="+/-" /></button>
+        <button>0</button>
+        <button>,</button>
+        <button onclick="calculadora.result()" class="quartiary">
+          <img src="./assets/resultado.svg" alt="=" />
+        </button>
+      </div>
+    </div>
+    <script type="text/javascript">
+      calculadora.inicializacao();
+    </script>
+  </body>
+</html>
